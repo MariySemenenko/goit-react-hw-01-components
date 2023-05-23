@@ -1,13 +1,15 @@
 
 import PropTypes from 'prop-types';
 
+import {StatisticTitle, StatisticsList} from './Statistics.styles';
+
 export const Statistics = ({ title, stats }) => {
     return (
 
         <section class="statistics">
         <h2 class="title">Upload stats</h2>
       
-        <ul class="stat-list">
+        <StatisticsList>
           <li class="item">
             <span class="label">.docx</span>
             <span class="percentage">4%</span>
@@ -24,14 +26,15 @@ export const Statistics = ({ title, stats }) => {
             <span class="label">.mp4</span>
             <span class="percentage">12%</span>
           </li>
-        </ul>
+        </StatisticsList>
       </section>
 
     );
 };
 
 Statistics.propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    stats: PropTypes.arrayOf(PropTypes.number),
     
   };
   
