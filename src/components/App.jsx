@@ -1,7 +1,7 @@
 import user from '../data/user.json';
 import { Profile } from './Profile/Profile';
 
-import statistics from '../data/statistics.json';
+import data from '../data/statistics.json';
 import { Statistics } from './Statistics/Statistics';
 
 
