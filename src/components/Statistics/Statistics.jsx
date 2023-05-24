@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 import {StatisticTitle, StatisticsList} from './Statistics.styles';
 
 export const Statistics = ({ title, stats }) => {
+
     return (
 
         <section class="statistics">
-        <h2 class="title">Upload stats</h2>
+        <h2 class="title">{title}</h2>
       
         <StatisticsList>
           <li class="item">
@@ -35,6 +36,8 @@ export const Statistics = ({ title, stats }) => {
 Statistics.propTypes = {
     title: PropTypes.string.isRequired,
     stats: PropTypes.arrayOf(PropTypes.number),
-    
+    label: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired
   };
   
