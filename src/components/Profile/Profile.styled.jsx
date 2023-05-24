@@ -44,6 +44,7 @@ export const None = styled.ul`
     display: flex;
     margin: 0 auto;
     padding-left: 5px;
+    justify-content: center;
 `;
 
 export const Color = styled.div`
