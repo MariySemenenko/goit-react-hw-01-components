@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types';
 
-import {Stat} from './Statistics.styles'
+import {Stat, List, Percent} from './Statistics.styles'
 
 
 export const Statistics = ({ title, stats }) => {
@@ -12,10 +12,10 @@ export const Statistics = ({ title, stats }) => {
         <h2 className="title">{title}</h2>
       
         <ul>
-          {stats.map(({id, label, percentage }) =>( <li className="item" key={id}>
+          {stats.map(({id, label, percentage }) =>( <List key={id}>
             <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
-          </li>))}
+            <Percent>{percentage}%</Percent>
+          </List>))}
           
         </ul>
       </Stat>
