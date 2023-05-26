@@ -6,7 +6,7 @@ import { Status } from './FriendListItem.styled'
 export const FriendListItem = ( { avatar, name, isOnline }) => {
     return (
         <li className="item">
-        <Status>{isOnline}</Status>
+        <Status isOnline={isOnline}>{isOnline}</Status>
         <img className={avatar} src={avatar} alt="User avatar" width="48" />
         <p >{name}</p>
       </li>

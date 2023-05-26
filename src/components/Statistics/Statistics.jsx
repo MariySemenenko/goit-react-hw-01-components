@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types';
 
-import {Stat, List, Percent} from './Statistics.styles'
+import {Stat, List, Percent} from './Statistics.styled'
 
 
 export const Statistics = ({ title, stats }) => {
