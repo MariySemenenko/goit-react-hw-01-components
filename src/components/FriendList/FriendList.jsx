@@ -7,6 +7,7 @@ import { List } from './FriendList.styled';
 
 export const FriendList = ({friends}) => {
     return (
+      <div>
         <List>
        {friends.map(({ id, avatar, name, isOnline }) => (
          <FriendListItem   key={id}
@@ -18,6 +19,7 @@ export const FriendList = ({friends}) => {
        
        ))}
       </List>
+      </div>
     )
   }
 

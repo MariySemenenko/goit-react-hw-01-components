@@ -6,11 +6,11 @@ import { Avatar,
      Location,
       Label,
        Quantity,
-        None } from './Profile.styled';
+        None, Div } from './Profile.styled';
 
 export const Profile = ({ username, avatar, tag, location, stats }) => {
   return (
-    <>
+    <Div>
       <div className="description">
         <Avatar src={avatar} alt={tag} />
         < Name>{username}</Name>
@@ -32,7 +32,7 @@ export const Profile = ({ username, avatar, tag, location, stats }) => {
           <Quantity>{stats.likes}</Quantity>
         </li>
       </None>
-    </>
+    </Div>
   );
 };
 

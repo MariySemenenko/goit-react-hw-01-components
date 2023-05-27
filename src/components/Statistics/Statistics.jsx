@@ -7,19 +7,21 @@ import {Stat, List, Percent} from './Statistics.styled'
 export const Statistics = ({ title, stats }) => {
 
     return (
-
+        <div>
         <Stat>
-        <h2 className="title">{title}</h2>
+        {title && (<h2 className="title" >{title}</h2>)}
       
         <ul>
-          {stats.map(({id, label, percentage }) =>( <List key={id}>
+          {stats.map(({id, label, percentage }) =>( 
+          <List key={id}>
             <span className="label">{label}</span>
             <Percent>{percentage}%</Percent>
-          </List>))}
+          </List>
+          ))}
           
         </ul>
       </Stat>
-
+      </div>
     );
 };
 
