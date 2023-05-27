@@ -47,7 +47,5 @@ export const None = styled.ul`
     justify-content: center;
 `;
 
-export const Color = styled.div`
-    background-color: beige;
-`;
+
 

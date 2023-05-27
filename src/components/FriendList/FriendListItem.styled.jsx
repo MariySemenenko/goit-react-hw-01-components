@@ -10,3 +10,4 @@ export const Status = styled.span`
      props.isOnline ? 'green' : 'yellow'
   )};
 `;
+
